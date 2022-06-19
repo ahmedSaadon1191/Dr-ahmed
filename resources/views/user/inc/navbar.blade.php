@@ -4,7 +4,7 @@
 
       <div class="float-start box_logo">
         <a href="index.html" class="logo text-center">
-          <img src="assets/user/img/logo.jpeg" alt="" class="img-fluid img_logo" >
+          <img src="assets/user/img/logo.jpeg" alt="" class="img-fluid img_logo" width="200px" height="50px">
         </a>
       </div>
 

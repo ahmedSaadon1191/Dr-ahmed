@@ -13,7 +13,7 @@
         <div class="swiper-wrapper align-items-center">
             @if (isset($images) && $images->count() > 0)
                 @foreach ($images as $img)
-                    <div class="swiper-slide"><a class="gallery-lightbox" href="{{ asset('/assets/images/' . $img->photo)}}"><img
+                    <div class="swiper-slide"><a class="gallery-lightbox" href="{{ asset('/assets/admin/images/' . $img->photo)}}"><img
                         src="{{ asset('/assets/admin/images/' . $img->photo)}}" class="img-fluid" alt=""></a>
                     </div>
                 @endforeach

@@ -1,5 +1,4 @@
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" dir="ltr">
+<section id="hero" dir="ltr">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
       <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
@@ -14,9 +13,9 @@
           <div class="overly_carousel">
             <div class="overly_content">
               <h3>
-                <strong>
-                  Top Quality .. Best Price
-                </strong>
+                  <strong>
+                    Top Quality .. Best Price
+                  </strong>
               </h3>
               <h1>Dr Ahmed EL-Omda <span>Dental Clinics</span></h1>
             </div>

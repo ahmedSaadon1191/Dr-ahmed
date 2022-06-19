@@ -10,11 +10,12 @@
         @if (isset($categories) && $categories->count() > 0)
             @foreach ($categories as $service)
                 <div class="col-md-6 col-lg-4 mb-4" data-bs-toggle="modal" data-bs-target="#serv-id{{ $service->id }}" id="{{ $service->id }}">
-                    <div class="myServe shadow">
+                    {{-- <div class="myServe shadow">
                         <div class="servOver"></div>
                         <div class="boxServiceImg" style="background-image: url('assets/admin/images/{{ $service->photo }}');">
                         </div>
-                    </div>
+                    </div> --}}
+                    <img src="assets/admin/images/{{ $service->photo }}" alt="" class="img-fluid imgServ">
                 </div>
                 <!-- Modal -->
 
@@ -99,7 +100,7 @@
                         <div class="modal-footer m-auto">
                         <a href="tel:+201004911155" target="_blank" class="pl-1 pr-1"><i class="bx bxs-phone shadow fs-2 rounded-pill p-2"></i></a>
                         <a href="#" class="pl-1 pr-1"><i class="bx bxl-facebook shadow fs-2 rounded-pill p-2"></i></a>
-                        <a href="#" class="pl-1 pr-1"><i class="bx bxl-twitter shadow fs-2 rounded-pill p-2"></i></a>
+                        <a href="#" class="pl-1 pr-1"><i class="bx bxl-whatsapp shadow fs-2 rounded-pill p-2"></i></a>
                         <a href="#" class="pl-1 pr-1"><i class="bx bxl-messenger shadow fs-2 rounded-pill p-2"></i></a>
                         </div>
                     </div>
