@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\ServiceCategory;
 use App\Models\Doctor;
+use App\Models\Video;
 use App\Models\BeforeAfter;
 
 
@@ -76,8 +77,10 @@ class FrontendController extends Controller
         $categories = ServiceCategory::remove()->with('posts')->get();
         $doctors    = Doctor::remove()->get();
         $images     = BeforeAfter::all();
+        $videos     = Video::all();
+        // return $videos;
        
-        return view('user.welcome',compact('categories','doctors','images'));
+        return view('user.welcome',compact('categories','doctors','images','videos'));
     }
 
 

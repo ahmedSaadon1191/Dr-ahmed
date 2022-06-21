@@ -2,11 +2,11 @@
 
 <div class="box_icon_social row">
 
-    <a href="tel:+201004911155" class="google-plus col-12" data-bs-toggle="modal" data-bs-target="#choose_phone"><i
+    <a href="tel:+201020036341" class="google-plus col-12" data-bs-toggle="modal" data-bs-target="#choose_phone"><i
             class="bx bxs-phone shadow"></i></a>
 
     <a href="https://web.facebook.com/CareDentalCenter.cdc/?_rdc=1&_rdr" class="twitter col-12" ><i
-            class="bx bxl-facebook shadow facebook" ></i></a>
+            class="bx bxl-facebook shadow facebook"></i></a>
 
     <a href="https://wa.me/01020036341" class="twitter col-12"><i class="bx bxl-whatsapp shadow whatsapp"></i></a>
 
@@ -22,7 +22,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Location </h5>
+                <h5 class="modal-title" id="staticBackdropLabel">{{ __('sections.select location') }} </h5>
 
             </div>
             <div class="modal-body">

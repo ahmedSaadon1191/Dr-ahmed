@@ -1,9 +1,9 @@
 
     <h2 class="text-center mt-2 mb-4"></h2>
     <div class="section-title">
-      <h2>Our Services</h2>
+      <h2>{{ __('sections.Services') }}</h2>
       <p>
-        Our centers offer all dental services with the premium guality and the best price
+      {{ __('sections.services p1') }}
       </p>
     </div>
     <div class="row">
@@ -58,50 +58,59 @@
                                 @endforeach
                             @else
                             <h2 class="text-center">
-                                لا يوجد مقالات
+                               {{ __('sections.no posts') }}
                             </h2>
                             <hr class="mb-3">
                             @endif
 
                         <br>
 
-                        <h3>reserve</h3>
+                        <h3>{{ __('sections.reserve') }}</h3>
 
                         <form action="">
                             <div class="mt-3">
-                            <input type="text" name="" id="" placeholder="Name" class="form-control">
+                            <input type="text" name="" id="" placeholder="{{ __('sections.name') }}" class="form-control" require>
                             </div>
                             <div class="mt-3">
-                            <input type="email" name="" id="" placeholder="email" class="form-control">
+                            <input type="email" name="" id="" placeholder="{{ __('sections.email') }}" class="form-control" require>
                             </div>
                             <div class="mt-3">
-                            <input type="tel" name="" id="" placeholder="Phone" class="form-control">
+                            <input type="tel" name="" id="" placeholder="{{ __('sections.phone') }}" class="form-control" require>
                             </div>
                             <div class="mt-3">
-                            <select name="" class="form-control" id="">
-                                <option value="">Services</option>
+                            <select name="" class="form-control" id="" require> 
+                                <option value="">{{ __('sections.select services') }}</option>
+                                @if(isset($categories))
+                                    @foreach ($categories as $category)
+                                        <option value="{{ $category->id }}">
+                                            {{ $category->name }}
+                                        </option>
+                                    @endforeach
+                                @endif
                             </select>
                             </div>
                             <div class="mt-3">
                             <select name="" class="form-control" id="">
-                                <option value="">location</option>
+                                <option value="">{{ __('sections.select location') }}</option>
+                                <option value="0">{{ __('about.branch 1') }}</option>
+                                <option value="1">{{ __('about.branch 2') }}</option>
                             </select>
                             </div>
 
                             <div class="mt-3">
-                            <textarea name="message" id="" cols="30" rows="5" placeholder="Message"
+                            <textarea name="message" id="" cols="30" rows="5" placeholder="{{ __('sections.message') }}"
                                 class="form-control"></textarea>
                             </div>
                             <div class="mt-5">
-                            <button class="btn btn-dark">Reserve Now</button>
+                            <button class="btn btn-dark">{{ __('sections.reserve') }}</button>
                             </div>
                         </form>
                         </div>
                         <div class="modal-footer m-auto">
-                        <a href="tel:+201004911155" target="_blank" class="pl-1 pr-1"><i class="bx bxs-phone shadow fs-2 rounded-pill p-2"></i></a>
-                        <a href="#" class="pl-1 pr-1"><i class="bx bxl-facebook shadow fs-2 rounded-pill p-2"></i></a>
-                        <a href="#" class="pl-1 pr-1"><i class="bx bxl-whatsapp shadow fs-2 rounded-pill p-2"></i></a>
-                        <a href="#" class="pl-1 pr-1"><i class="bx bxl-messenger shadow fs-2 rounded-pill p-2"></i></a>
+                        <a href="tel:+201020036341" target="_blank" class="pl-1 pr-1"><i class="bx bxs-phone shadow fs-2 rounded-pill p-2"></i></a>
+                        <a href="https://web.facebook.com/CareDentalCenter.cdc/?_rdc=1&_rdr" class="pl-1 pr-1"><i class="bx bxl-facebook shadow fs-2 rounded-pill p-2"></i></a>
+                        <a href="https://wa.me/01020036341" class="pl-1 pr-1"><i class="bx bxl-whatsapp shadow fs-2 rounded-pill p-2"></i></a>
+                        <a href="https://web.facebook.com/messages/t/103747054448618" class="pl-1 pr-1"><i class="bx bxl-messenger shadow fs-2 rounded-pill p-2"></i></a>
                         </div>
                     </div>
                     </div>

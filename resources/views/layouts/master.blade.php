@@ -45,7 +45,8 @@
 
     @if (App::getLocale() == 'fr')
         <style>
-            .navbar .nav-link, .navbar .dropdown a{
+            .navbar .nav-link, .navbar .dropdown a
+            {
                 font-size: 12px !important;
                 font-weight: 600;
             }

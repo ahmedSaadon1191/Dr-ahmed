@@ -20,13 +20,17 @@ return [
     'Services'          => 'Nos services',
     'reviews'           => 'Commentaires',
     'Doctors'           => 'Médecins',
-    'images'            => 'Avant et après',
+    'images'            => 'Galerie',
     'contact us'        => 'Nous contacter',
     'location'          => 'emplacement',
     'Reserve'           => 'Réservez maintenant',
     'videos '           => 'vidéos',
 
     'ahmed'  => 'Dr / Ahmed El-omda',
+    'Top Quality' => 'Qualité supérieure',
+    'Best Price' => 'Meilleur prix',
+    'Dental Clinics' => 'Cliniques dentaires',
+    
 
 
 

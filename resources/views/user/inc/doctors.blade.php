@@ -3,10 +3,9 @@
         <div class="container" data-aos="fade-up">
 
           <div class="section-title">
-            <h2>our Doctors</h2>
+            <h2>{{ __('sections.doctors') }}</h2>
             <p>
-              Our centers have the best team of consultants, staff members and specialized doctors in all dental
-              services
+            {{ __('sections.doctors p1') }}
             </p>
           </div>
 

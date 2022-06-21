@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 @if (App::getLocale() == 'en')
-<html lang="en" dir="ltr">
+  <html lang="en" dir="ltr">
 @elseif(App::getLocale() == 'fr')
-<html lang="fr" dir="ltr">
+  <html lang="fr" dir="ltr">
 @else
-<html lang="ar" dir="rtl">
+  <html lang="ar" dir="rtl">
     <style>
         #header
         {
@@ -17,6 +17,7 @@
         }
     </style>
 @endif
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
   <meta charset="utf-8">

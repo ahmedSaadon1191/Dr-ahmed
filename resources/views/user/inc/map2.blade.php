@@ -1,6 +1,6 @@
 <div class="card card-body card_sidebar_one mt-5">
-    <h3 class="text-center" style="color: #fff;">Care Dental Center</h3>
-    <h5 style="color: #fff;" class="text-center">Heliopolis Branch</h5>
+    <h3 class="text-center" style="color: #fff;">{{__('about.care')}}</h3>
+    <h5 style="color: #fff;" class="text-center">{{__('about.branch 2')}}</h5>
     <hr>
 
     <iframe style="border:0; width: 100%; height: 505px;border-radius: 10px;"

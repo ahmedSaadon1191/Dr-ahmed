@@ -52,7 +52,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a id="appointment0"  href="#appointment" class="appointment-btn scrollto d-none d-md-block"><span class="">Book Now</a>
+      <a id="appointment0"  href="#appointment" class="appointment-btn scrollto d-none d-md-block"><span class="">{{__('sections.reserve')}}</a>
 
     </div>
   </header><!-- End Header -->

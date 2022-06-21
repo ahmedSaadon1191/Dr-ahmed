@@ -1,7 +1,7 @@
   <!-- ======= About Us Section ======= -->
 
     <div class="section-title">
-      <h2 id="para">About us</h2>
+      <h2 id="para">{{ __('about.about') }}</h2>
     </div>
 
     <div class="card">
@@ -14,22 +14,22 @@
           <div class="col-md-6 content">
 
 
-            <h3>Dr Ahmed El-Omda</h3>
-            <p class="mt-4">
+            <h3>{{ __('navbar.ahmed') }}</h3>
+            <p class="mt-4 about_p">
 
-              ➡️ Owner of Swiss Dental Clinics <br>
-              <span class="align ps-4">Nasr city Branch</span>
+              ➡️ {{ __('about.Owner of Swiss Dental Clinics') }} <br>
+              <span class="align ps-4">{{ __('about.branch 1') }}</span>
               <br>
 
-              ➡️ Owner of Care Dental Center <br>
-              <span class="align ps-4">Heliopolis Branch</span>
+              ➡️ {{ __('about.Owner of Care Dental Center') }} <br>
+              <span class="align ps-4">{{ __('about.branch 2') }}</span>
               <br>
 
-              🎓 Master of Oral and Maxillo - facial <span class="Implantology">Prosthodontics and Implantology -
-                Faculity Of - <span class="Implantology">Dentistry Ain Shams University</span></span>
-              <br>🎓 Bachelor Of Dentistry - Faculity Of Dentistry <span class="Implantology"> - Ain Shams
-                University</span> <br>
-              🎓 Member of the International Congress of Oral <span class="Implantology">Implantology</span>
+              🎓 {{ __('about.p1') }}  <span class="Implantology">{{ __('about.p2') }} <span class="Implantology">{{ __('about.p3') }}</span></span>
+              <br>
+              🎓 {{ __('about.p4') }} <span class="Implantology" id="p5">{{ __('about.p5') }}</span> 
+              <br>
+              🎓 {{ __('about.p6') }} <span class="Implantology">{{ __('about.p7') }}</span>
 
             </p>
           </div>

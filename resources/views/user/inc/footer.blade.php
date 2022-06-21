@@ -1,6 +1,6 @@
 <div class="top_footer">
     <h2>
-        Top Quality .. Best Price
+        {{ __('navbar.Top Quality') }} .. {{ __('navbar.Best Price') }}
     </h2>
 </div>
 <!-- ======= Footer ======= -->
@@ -12,49 +12,53 @@
 
                 <div class="col-md-4">
                     <div class="footer-info">
-                        <h4 class="footer_adress" style="color: #fff;font-weight: 700;font-size: 22px;">Our Branches
+                        <h4 class="footer_adress" style="color: #fff;font-weight: 700;font-size: 22px;">{{ __('sections.branches') }}
                         </h4>
                         <a href="#contact" style="color: #fff">
                             <p>
-                                <h3>Nasr City Branch</h3>
-                                <strong>Phone:</strong> +20 1020036341<br>
-                                <strong>Email:</strong> care.dental.cdc@gmail.com<br>
+                                <h3>{{ __('about.branch 1') }}</h3>
+                                <strong>{{ __('sections.phone') }}:</strong> +20 1020036341<br>
+                                <strong>{{ __('sections.email') }}:</strong> care.dental.cdc@gmail.com<br>
                             </p>
                         </a><br>
 
                         <a href="#contact" style="color: #fff">
                             <p>
-                                <h3>Heliopolis Branch</h3>
-                                <strong>Phone:</strong> +20 1007175878<br>
-                                <strong>Email:</strong> swiss.dental.original@gmail.com<br>
+                                <h3>{{ __('about.branch 2') }}</h3>
+                                <strong>{{ __('sections.phone') }}:</strong> +20 1007175878<br>
+                                <strong>{{ __('sections.email') }}:</strong> swiss.dental.original@gmail.com<br>
                             </p>
                         </a>
 
                         <div class="social-links mt-3">
-                            <a href="tel:+201004911155" class="instagram"><i class="bx bxs-phone"></i></a>
-                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-messenger"></i></a>
+                            <a href="tel:+201020036341" class="instagram"><i class="bx bxs-phone"></i></a>
+                            <a href="https://web.facebook.com/CareDentalCenter.cdc/?_rdc=1&_rdr" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://wa.me/01020036341" class="facebook"><i class="bx bxl-whatsapp"></i></a>
+                            <a href="https://web.facebook.com/messages/t/103747054448618" class="instagram"><i class="bx bxl-messenger"></i></a>
 
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 footer-links">
-                    <h4>Useful Links</h4>
+                    <h4>{{ __('sections.links') }}</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="index.html">Home</a></li>
-                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="#about">About us</a></li>
-                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="#Our_Services">Services</a>
+                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="index.html">{{ __('navbar.home') }}</a></li>
+                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="#about">{{ __('navbar.about us') }}</a></li>
+                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="#Our_Services">{{ __('navbar.Services') }}</a>
+                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="#videos">{{ __('navbar.videos') }}</a>
+                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="#review">{{ __('navbar.reviews') }}</a>
                         </li>
-                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="#doctors">doctors</a></li>
-                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="#contact">contact us</a>
+                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="#doctors">{{ __('navbar.Doctors') }}</a></li>
+                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="#gallery">{{ __('navbar.images') }}</a></li>
+                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="#contact">{{ __('navbar.contact us') }}</a>
+                        <li><i class="bx bx-chevron-right" style="color: #fff"></i> <a href="#Location">{{ __('navbar.location') }}</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 footer-links">
-                    <h4>Our Services</h4>
+                    <h4>{{ __('sections.Services') }}</h4>
                     <ul>
                         @if (isset($categories) && $categories->count() > 0)
                             @foreach ($categories as $category)

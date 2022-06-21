@@ -2,7 +2,7 @@
     <div class="container">
 
         <div class="section-title">
-            <h2>Our Branches</h2>
+            <h2>{{ __('sections.branches') }}</h2>
         </div>
 
     </div>
@@ -18,7 +18,7 @@
 
             </div>
             <div class="col-md-6">
-                <h3>Nasr City Branch</h3>
+                <h3>{{ __('about.branch 1') }}</h3>
                 <p class="mt-3 lead">
                     102 Mousslas St. From Ahmrd Al Zomor St - El Hay El Asher - Al Swissri Marhala B - Nasr city - Cairo
                     -
@@ -29,7 +29,7 @@
         <div class="row mt-3">
 
             <div class="col-md-6 d-none d-md-inline">
-                <h3>Heliopolis Branch</h3>
+                <h3>{{ __('about.branch 2') }}</h3>
                 <p class="mt-3 lead">
                     113 El Nozha Street - Triumph Square - Heliopolis - Cairo - Egypt
                 </p>

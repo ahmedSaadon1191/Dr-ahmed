@@ -14,10 +14,10 @@
             <div class="overly_content">
               <h3>
                   <strong>
-                    Top Quality .. Best Price
+                    {{ __('navbar.Top Quality') }} .. {{ __('navbar.Best Price') }}
                   </strong>
               </h3>
-              <h1>Dr Ahmed EL-Omda <span>Dental Clinics</span></h1>
+              <h1>{{ __('navbar.ahmed') }}<span> {{ __('navbar.Dental Clinics') }}</span></h1>
             </div>
           </div>
         </div>

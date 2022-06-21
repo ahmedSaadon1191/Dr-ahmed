@@ -20,13 +20,16 @@ return [
     'Services'      => 'Our Services',
     'reviews'       => 'Reviews',
     'Doctors'       => 'Doctors',
-    'images'        => 'Before && After',
+    'images'        => 'Gallery',
     'contact us'    => 'Contact Us',
     'location'      => 'Location',
     'Reserve'       => 'Book Now',
     'videos'        => 'Videos',
 
     'ahmed'  => 'Dr / Ahmed El-omda',
+    'Top Quality' => 'Top Quality',
+    'Best Price' => 'Best Price',
+    'Dental Clinics' => 'Dental Clinics'
 
 
 
