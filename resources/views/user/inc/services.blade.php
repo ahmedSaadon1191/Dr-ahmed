@@ -44,7 +44,6 @@
                                     @endforeach
                                 @endif
 
-
                                     <p class="lead mt-4">
                                     {!! $post->body !!}
                                     </p>
@@ -67,22 +66,24 @@
 
                         <h3>{{ __('sections.reserve') }}</h3>
 
-                        <form action="">
+                        <form action="{{ url('bookNowForm') }}" method="POST" role="form"    data-aos="fade-up"
+                            data-aos-delay="100">
+                            @csrf
                             <div class="mt-3">
-                            <input type="text" name="" id="" placeholder="{{ __('sections.name') }}" class="form-control" require>
+                            <input type="text" name="name" id="" placeholder="{{ __('sections.name') }}" class="form-control" require>
                             </div>
                             <div class="mt-3">
-                            <input type="email" name="" id="" placeholder="{{ __('sections.email') }}" class="form-control" require>
+                            <input type="email" name="email" id="" placeholder="{{ __('sections.email') }}" class="form-control" require>
                             </div>
                             <div class="mt-3">
-                            <input type="tel" name="" id="" placeholder="{{ __('sections.phone') }}" class="form-control" require>
+                            <input type="tel" name="phone" id="" placeholder="{{ __('sections.phone') }}" class="form-control" require>
                             </div>
                             <div class="mt-3">
-                            <select name="" class="form-control" id="" require> 
+                            <select name="services" class="form-control" id="" require>
                                 <option value="">{{ __('sections.select services') }}</option>
                                 @if(isset($categories))
                                     @foreach ($categories as $category)
-                                        <option value="{{ $category->id }}">
+                                        <option value="{{ $category->name }}">
                                             {{ $category->name }}
                                         </option>
                                     @endforeach
@@ -90,10 +91,10 @@
                             </select>
                             </div>
                             <div class="mt-3">
-                            <select name="" class="form-control" id="">
+                            <select name="location" class="form-control" id="">
                                 <option value="">{{ __('sections.select location') }}</option>
-                                <option value="0">{{ __('about.branch 1') }}</option>
-                                <option value="1">{{ __('about.branch 2') }}</option>
+                                <option value="Nasr city Branch">{{ __('about.branch 1') }}</option>
+                                <option value="Heliopolis Branch">{{ __('about.branch 2') }}</option>
                             </select>
                             </div>
 
@@ -102,7 +103,7 @@
                                 class="form-control"></textarea>
                             </div>
                             <div class="mt-5">
-                            <button class="btn btn-dark">{{ __('sections.reserve') }}</button>
+                            <button type="submit" class="btn btn-dark">{{ __('sections.reserve') }}</button>
                             </div>
                         </form>
                         </div>

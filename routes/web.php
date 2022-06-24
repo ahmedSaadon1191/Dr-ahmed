@@ -1,14 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\BookNowController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\Admin\postsController;
+use App\Http\Controllers\Admin\videosController;
+use App\Http\Controllers\Admin\doctorsController;
+use App\Http\Controllers\Admin\beforeAfterController;
 use App\Http\Controllers\Admin\servicesCategoriesController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-use App\Http\Controllers\Admin\beforeAfterController;
-use App\Http\Controllers\Admin\doctorsController;
-use App\Http\Controllers\Admin\videosController;
-use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -130,6 +131,10 @@ Route::group(
         Route::get('branches', [FrontendController::class, 'branches']);
         Route::get('formBooking', [FrontendController::class, 'formBooking']);
     });
+
+
+    Route::post('bookNowForm', [BookNowController::class, 'index']);
+
 
 
 

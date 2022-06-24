@@ -7,8 +7,10 @@
 
         </div>
 
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up"
+        <form action="{{ url('bookNowForm') }}" method="POST" role="form"    data-aos="fade-up"
             data-aos-delay="100">
+            @csrf
+
             <div class="row">
                 <div class="col-md-4 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="{{ __('sections.name') }}" required>
@@ -23,20 +25,20 @@
             <div class="row">
 
                 <div class="col-md-4 form-group mt-3">
-                    <select name="department" id="department" class="form-select">
+                    <select name="services" id="department" class="form-select">
                         <option value="">{{ __('sections.select services') }}</option>
                         @if (isset($categories))
                                     @foreach ($categories as $category)
-                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                    <option value="{{ $category->name }}">{{ $category->name }}</option>
                                     @endforeach
                                 @endif
                     </select>
                 </div>
                 <div class="col-md-4 form-group mt-3">
-                    <select name="doctor" id="doctor" class="form-select">
+                    <select name="location" id="doctor" class="form-select">
                         <option value="">{{ __('sections.select location') }}</option>
-                        <option value="0">{{ __('about.branch 1') }}</option>
-                        <option value="1">{{ __('about.branch 2') }}</option>
+                        <option value="Nasr city Branch">{{ __('about.branch 1') }}</option>
+                        <option value="Heliopolis Branch">{{ __('about.branch 2') }}</option>
                     </select>
                 </div>
             </div>
@@ -44,12 +46,8 @@
             <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="{{ __('sections.message') }} (Optional)"></textarea>
             </div>
-            <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">{{ __('sections.send message') }}</button></div>
+
+            <div class="text-center"><button class="btn btn-primary mt-3" type="submit">{{ __('sections.send message') }}</button></div>
         </form>
 
     </div>

@@ -211,6 +211,7 @@
 
 <body id="body">
 
+    @include('sweetalert::alert')
     @include('user.inc.social_contacts')
 
     @include('user.inc.topbar')
